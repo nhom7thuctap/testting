@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xxx {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s ease-in-out;
+}
+img:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.xxx:hover .middle {
+  opacity: 1;
+}
+.overlay {
+  /* logo */
+
+  position: absolute;
+  width: 160px;
+  height: 41px;
+  left: 191px;
+  top: 56px;
+
+  /* Trafalgar */
+
+  position: absolute;
+  left: 15.25%;
+  right: 78.06%;
+  top: 1.06%;
+  bottom: 98.43%;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #233348;
+
+  mix-blend-mode: normal;
+
+  /* Ellipse 7 */
+
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 191px;
+  top: 56px;
+
+  background: #458ff6;
+
+  /* T */
+
+  position: absolute;
+  left: 12.75%;
+  right: 86.19%;
+  top: 1.04%;
+  bottom: 98.42%;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+}
+p {
+  /* width: 100px; */
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+}
